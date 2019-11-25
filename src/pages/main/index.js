@@ -54,11 +54,11 @@ export default class Main extends Component {
                     {profile.skills && profile.skills.map(skill => (
                         <article>
                             <p className="profile-skill-name"> {skill.name}</p>
-                            <div style={{border: '1px solid #fff',backgroundColor:'#333'}}>
-                                <div style={{ height: '24px', width: `${skill.value}`,backgroundColor: 'white' }}></div>
+                            <div style={{ border: '1px solid #fff', backgroundColor: '#333' }}>
+                                <div style={{ height: '24px', width: `${skill.value}`, backgroundColor: 'white' }}></div>
                             </div>
 
-                            
+
 
                         </article>
                     ))}
@@ -67,15 +67,29 @@ export default class Main extends Component {
 
                 <div className="profile-experience">
 
+                    <h5 className="profile-experience-titles">work experience</h5>
                     {profile.experience && profile.experience.map(exp => (
                         <article>
-                            <h3>{exp.name}</h3>
+                            <h5 className="">{exp.name}</h5>
                             <p>{exp.date}</p>
                             <p>{exp.description}</p>
 
                         </article>
 
                     ))}
+
+                    <h5 className="profile-experience-titles">education</h5>
+                    {profile.education && profile.education.map(ed => (
+                        <article>
+                            <h5 className="">{ed.name}</h5>
+                            <p>{ed.date}</p>
+                            <p>{ed.description}</p>
+
+                        </article>
+
+                    ))}
+
+
                 </div>
 
 

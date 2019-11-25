@@ -13,9 +13,7 @@ body{
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+    justify-content: space-between;    
 }
 
 .profile-profile{
@@ -23,6 +21,22 @@ body{
     color: #ffffff;
     padding: 10px;
     max-width: 20%;
+}
+.profile-experience{
+    background: #ffffff;
+    color: #000000;
+    padding: 20px;
+    max-width: 80%;
+    vertical-align: top;
+}
+.profile-experience h5{
+    font-weight: bold;
+    font-size: 12pt; 
+    text-transform: uppercase;
+}
+.profile-experience-titles{
+    border:2px solid #ffffff;
+    border-bottom-color: #000;
 }
 
 
@@ -45,8 +59,7 @@ body{
     border-bottom-color: #ffffff;
     text-align: center;
     text-justify: auto;
-    font-size: 12pt;
-    
+    font-size: 12pt;  
 }
 .profile-skill-name{
     text-transform: uppercase;
@@ -58,12 +71,4 @@ body{
     font-size: 10pt;;
     text-align: center;
     text-justify: auto;
-}
-
-
-
-
-
-.profile-experience{
-
 }
